@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:image_labelling_app/common_widgets/common_fab.dart';
+import 'package:image_labelling_app/constants/app_colors.dart';
 
 class EmotionalRecognition extends StatefulWidget {
   const EmotionalRecognition({super.key});
@@ -10,6 +12,9 @@ class EmotionalRecognition extends StatefulWidget {
 class _EmotionalRecognitionState extends State<EmotionalRecognition> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const Scaffold(
+      backgroundColor: AppColors.greenish,
+      floatingActionButton: CommonFAB(bgColor: AppColors.greenish),
+    );
   }
 }

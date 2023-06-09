@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:google_mlkit_image_labeling/google_mlkit_image_labeling.dart';
+import 'package:image_labelling_app/routing/app_router.dart';
 import 'package:image_picker/image_picker.dart';
 
 import 'features/home/home_screen.dart';
@@ -16,12 +17,12 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      routerConfig: goRouter,
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           //primarySwatch: Colors.green,
           ),
-      home: const HomeScreen(),
     );
   }
 }
