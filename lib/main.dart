@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:google_mlkit_image_labeling/google_mlkit_image_labeling.dart';
 import 'package:image_picker/image_picker.dart';
 
+import 'features/home/home_screen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -17,9 +19,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.green,
-      ),
-      home: const MyHomePage(),
+          //primarySwatch: Colors.green,
+          ),
+      home: const HomeScreen(),
     );
   }
 }
