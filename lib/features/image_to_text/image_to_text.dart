@@ -25,7 +25,7 @@ class _ImageToTextState extends State<ImageToText> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.yellowish,
-      floatingActionButton: CommonFAB(bgColor: AppColors.yellowish),
+      floatingActionButton: const CommonFAB(bgColor: AppColors.yellowish),
       body: Center(
           child: SingleChildScrollView(
         child: Container(
