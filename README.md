@@ -36,6 +36,7 @@ Install image labeller
   flutter pub get
 ```
 - setup firebase
+- Generate google-services.json
 - Connect a device: Connect a physical device (such as a smartphone or tablet) to your computer via USB, or start an emulator or simulator.
 
 - Run the project
