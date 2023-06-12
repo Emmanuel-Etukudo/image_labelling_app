@@ -70,9 +70,14 @@ class _EmotionalRecognitionState extends State<EmotionalRecognition> {
                 const SizedBox(
                   height: 20,
                 ),
-                Text(
-                  emotionResult,
-                  style: const TextStyle(fontSize: 20),
+                Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      emotionResult,
+                      style: const TextStyle(fontSize: 20),
+                    ),
+                  ),
                 )
               ],
             )),

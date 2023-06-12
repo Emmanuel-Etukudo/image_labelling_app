@@ -66,10 +66,13 @@ class _ImageToTextState extends State<ImageToText> {
                 const SizedBox(
                   height: 20,
                 ),
-                Container(
-                  child: Text(
-                    scannedText,
-                    style: TextStyle(fontSize: 20),
+                Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      scannedText,
+                      style: const TextStyle(fontSize: 20),
+                    ),
                   ),
                 )
               ],

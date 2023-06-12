@@ -69,9 +69,15 @@ class _ImageRecognitionState extends State<ImageRecognition> {
                   const SizedBox(
                     height: 20,
                   ),
-                  Text(
-                    imageLabel,
-                    style: const TextStyle(fontSize: 20),
+                  Card(
+                    child: Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Text(
+                        imageLabel,
+                        style: const TextStyle(
+                            fontSize: 20, color: AppColors.bluish),
+                      ),
+                    ),
                   )
                 ],
               )),
